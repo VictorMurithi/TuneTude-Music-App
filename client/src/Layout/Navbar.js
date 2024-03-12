@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
-export default function Navbar() {
+export default function Navbar({accessToken}) {
     const[searchTerm, setSearchTerm] = useState('')
 
     const handleSearch = async (e) => {
